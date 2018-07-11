@@ -1,0 +1,32 @@
+<h2>Simple Ng content</h2>
+<section>
+<app-ng-content-simple>
+  I am a simple ng content
+</app-ng-content-simple>
+</section>
+
+<h2>Ng content select</h2>
+<section>
+<app-ng-content-select>
+  <div>simple content</div>
+  <span style="display:block">span content</span>
+  <div attribute>content with attribute</div>
+  <div class="class">content with css class</div>
+</app-ng-content-select>
+</section>
+
+<h2>Content provide with context</h2>
+<section>
+<app-ng-content-context>
+  <ng-template let-timer="timer">{{timer}}</ng-template>
+</app-ng-content-context>
+</section>
+
+<h2>Child component inject with parent component</h2>
+<section>
+<app-ng-content-inject>
+  <app-ng-content-inject-child></app-ng-content-inject-child>
+  <app-ng-content-inject-child></app-ng-content-inject-child>
+  <app-ng-content-inject-child></app-ng-content-inject-child>
+</app-ng-content-inject>
+</section>
