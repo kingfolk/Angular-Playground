@@ -1,0 +1,13 @@
+<h1>Svg containing 10000 rect box</h1>
+<svg
+  (mousedown)="mouseDown($event)"
+  (mouseup)="mouseUp($event)"
+  (mousemove)="mouseMove($event)"
+>
+  <svg:g
+    *ngFor="let box of boxes"
+    app-performance-svg-box
+    [box]="box"
+    [selected]="box.id == currentId"
+  ></svg:g>
+</svg>

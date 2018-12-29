@@ -1,0 +1,13 @@
+<h1>Onpush strategy</h1>
+<svg
+  (mousedown)="mouseDown($event)"
+  (mouseup)="mouseUp($event)"
+  (mousemove)="mouseMove($event)"
+>
+  <svg:g
+    *ngFor="let box of boxes"
+    app-performance-onpush-box
+    [box]="box"
+    [selected]="box.id == currentId"
+  ></svg:g>
+</svg>

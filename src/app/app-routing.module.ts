@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: './ng-content/ng-content.module#NgContentModule',
   },
   {
+    path: 'performance',
+    loadChildren: './performance/performance.module#PerformanceModule',
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',

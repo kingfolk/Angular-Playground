@@ -14,6 +14,13 @@ import { NgContentInjectChildComponent } from './ng-content-inject/ng-content-in
     CommonModule,
     NgContentRoutingModule
   ],
-  declarations: [NgContentComponent, NgContentSimpleComponent, NgContentSelectComponent, NgContentContextComponent, NgContentInjectComponent, NgContentInjectChildComponent]
+  declarations: [
+    NgContentComponent,
+    NgContentSimpleComponent,
+    NgContentSelectComponent,
+    NgContentContextComponent,
+    NgContentInjectComponent,
+    NgContentInjectChildComponent,
+  ],
 })
 export class NgContentModule { }

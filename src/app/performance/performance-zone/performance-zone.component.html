@@ -1,0 +1,12 @@
+<h1>Ngzone controls</h1>
+<svg
+  (mousedown)="mouseDown($event)"
+  (mouseup)="mouseUp($event)"
+>
+  <svg:g
+    *ngFor="let box of boxes"
+    app-performance-svg-box
+    [box]="box"
+    [selected]="box.id == currentId"
+  ></svg:g>
+</svg>
