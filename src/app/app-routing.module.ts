@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: './performance/performance.module#PerformanceModule',
   },
   {
+    path: 'lazy-tab',
+    loadChildren: './tab/tab.module#TabModule',
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',

@@ -9,6 +9,10 @@ const routers = [
     route: '/performance',
     name: 'performance tips',
   },
+  {
+    route: '/lazy-tab',
+    name: 'lazy tab',
+  }
 ];
 
 @Component({

@@ -1,0 +1,13 @@
+<div class="head">
+  <div
+    class="head-item"
+    *ngFor="let pane of panes"
+    [class.active]="pane.active"
+    (click)="selectPane(pane)"
+  >
+    {{pane.name}}
+  </div>
+</div>
+<div class="body">
+  <ng-content></ng-content>
+</div>
