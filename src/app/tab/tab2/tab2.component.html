@@ -1,0 +1,22 @@
+<div class="head">
+  <div
+    #item
+    class="head-item"
+    *ngFor="let pane of panes"
+    (click)="selectPane(pane)"
+  >
+    {{pane.name}}
+  </div>
+  <div class="head-link-bar"
+    [style.left.px]="linkBarStyle.left"
+    [style.width.px]="linkBarStyle.width"
+  ></div>
+</div>
+<div class="body">
+  <app-tab2-body
+    *ngFor="let pane of panes"
+    [content]="pane.template"
+    [active]="pane.active"
+    [position]="pane.index"
+  ></app-tab2-body>
+</div>

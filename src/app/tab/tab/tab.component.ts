@@ -1,4 +1,4 @@
-import { Component, OnInit, ContentChildren, QueryList, ViewChildren, ViewContainerRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ContentChildren, QueryList, AfterViewInit } from '@angular/core';
 import { TabPaneDirective } from './tab-pane.directive';
 
 @Component({

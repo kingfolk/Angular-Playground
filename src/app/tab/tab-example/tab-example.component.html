@@ -6,3 +6,17 @@
     <input type="text">
   </app-tab-example-timer>
 </app-tab>
+
+<h2>Tab example with animation</h2>
+
+<app-tab2 style="height:200px">
+  <app-tab-example-timer style="background:red" *appTab2Pane="'tab1'"></app-tab-example-timer>
+  <app-tab-example-timer style="height:100%;background:yellow" *appTab2Pane="'tab2'">
+    <input type="text">
+  </app-tab-example-timer>
+  <div *appTab2Pane="'i have a long name tab'">
+    first line
+    <div style="height:200px;background:yellow"></div>
+    last line
+  </div>
+</app-tab2>

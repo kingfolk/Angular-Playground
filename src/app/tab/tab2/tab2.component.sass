@@ -1,0 +1,26 @@
+\:host
+  display: flex
+  flex-direction: column
+
+.head
+  position: relative
+  display: flex
+  flex-shrink: 0
+  border-bottom: 1px solid grey
+
+  &-item
+    padding: .5rem 1rem
+    border-bottom: 1px solid transparent
+    cursor: pointer
+
+  &-link-bar
+    position: absolute
+    bottom: 0
+    height: 2px
+    background-color: blue
+    transition: all .3s cubic-bezier(.645,.045,.355,1)
+
+.body
+  position: relative
+  display: flex
+  flex: 1
